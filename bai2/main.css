@@ -1,0 +1,30 @@
+* {
+	margin:  0;
+	padding: 0;
+	border: 0;
+}
+div.container {
+	width: 960px;
+	margin: 0 auto;
+	line-height: 2;
+}
+.text-center {
+	text-align: center;
+}
+.text-indent {
+	text-indent: 50px;
+}
+
+/* CSS chung */
+p:first-child {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+div.container>p:nth-child(2) {
+	color: #25b5ec;
+	font-size: 20px;
+}
+div.box-right {
+	width:  43%;
+	float: right;
+}

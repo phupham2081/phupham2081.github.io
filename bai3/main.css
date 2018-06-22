@@ -12,9 +12,10 @@ div.container {
 	margin: 0 auto;
 }
 div.item {
-	width : 30%;
+	width : 18%;
 	height: 550px;
 	display: inline-block;
+	
 }
 div.image a img{
 	width: 90%;
@@ -28,8 +29,14 @@ div.name a {
 	list-style: none;
 	text-decoration: none;
 }
-div.name-product p{
+div.product img {
+	width: 25%;
+	height: 450px;
+	display: inline-block;
+}
+div.name-product a {
 	font-size: 24px;
 	text-align: center;
-	margin-top: -590px;
+	display: inline-block;
+	text-decoration: none;
 }

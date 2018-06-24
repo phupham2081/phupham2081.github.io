@@ -1,0 +1,80 @@
+* {
+	border:  0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div.container {
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+div#menu {
+	text-align: center;
+}
+div#menu>p:first-child {
+	font-size: 30px;
+	font-family: 'Abril Fatface', cursive;
+}
+div#menu>p:nth-child(3){
+	color: #ff5252;
+	font-family: 'Courgette', cursive;
+}
+ul.nav {
+	width:  250px;
+	background-color: #ff5252;
+	margin: auto;
+	list-style: none;
+	position: absolute;
+	left: 15px;
+	top: 113px;
+}
+ul.nav li {
+	padding: 5px 15px;
+	width:  auto;
+	border: 1px solid white;
+	 
+}
+ul.nav li a {
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Abril Fatface', cursive ;
+	color: black;
+}
+ul.nav li:hover {
+	background-color: white; 
+	
+}
+ul.nav li:hover a {
+	color: #ff5252;
+}
+
+div#list-item {
+	padding-top: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+div#list-item .imgs {
+	width: 33%;
+	/* padding: 2.4%; */
+	display: inline-block;
+}
+div#list-item .imgs:hover {
+	background-color: red;
+	opacity: 0.5;
+}
+div#list-item .img:after {
+	content: attr(data-text);
+}
+div#list-item .imgs img {
+	max-width: 100%;
+}
+div.back-to-top {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+div.back-to-top img {
+	width: 60px;
+	height: 60px;
+}

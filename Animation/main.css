@@ -1,0 +1,43 @@
+/* font-family: 'Gilda Display', serif; 
+	font-family: 'Roboto', sans-serif;*/
+* {
+	margin:  0;
+	border: 0;
+	padding: 0;
+}
+div.container {
+	max-width: 1200px;
+	margin: auto;
+}
+div#heading {
+	text-align: center;
+}
+h1 {
+	font-family: 'Gilda Display', serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+div#heading > h3 {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	color: #727475
+}
+div.gallary-img {
+	margin-top: 74px;
+}
+div.gallary-img .imgs {
+	width: 29.3%;
+	background-color: red;
+	float: left;
+	margin: 0 2% 4%;
+	vertical-align: middle;
+	text-align: center;
+	    box-shadow: 0 7px 20px rgba(0,0,0,.15);
+}
+div.gallary-img div.imgs img {
+	width: 100%;
+}
+div.gallary-img .imgs a {
+
+}

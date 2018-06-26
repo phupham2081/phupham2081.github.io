@@ -5,8 +5,28 @@
 	border: 0;
 	padding: 0;
 }
+@keyframes copyright {
+	0% {
+		transform: translateX(40%);
+		transition: transform 1s ease-in-out;
+	}
+	25% {
+		transform: translateX(40%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@keyframes details-product {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 div.container {
-	max-width: 1200px;
+	max-width: 80%;
 	margin: auto;
 }
 div#heading {
@@ -28,16 +48,52 @@ div.gallary-img {
 }
 div.gallary-img .imgs {
 	width: 29.3%;
-	background-color: red;
 	float: left;
 	margin: 0 2% 4%;
 	vertical-align: middle;
+	text-align: center;	
+	box-shadow: 0 7px 20px rgba(0,0,0,.15);
+}
+div.gallary-img .imgs:hover img{
+	filter: blur(2px);
+	transition: filter 1s linear;
+
+}
+div.gallary-img .imgs:hover {
+	position: relative;
+}
+div.gallary-img .imgs:hover a::after {
+	content: "Details \002B";
+	position: absolute;
+	top: 45%;
+	left: 30%;
 	text-align: center;
-	    box-shadow: 0 7px 20px rgba(0,0,0,.15);
+	vertical-align: middle;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	color: white;
+	background-color: #9d826d;
+	font-family: 'Gilda Display', serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	animation: details-product 1s ease-in;
 }
 div.gallary-img div.imgs img {
 	width: 100%;
 }
 div.gallary-img .imgs a {
+	list-style: none;
 
+}
+
+
+div.copyright {
+	text-align: center;
+	font-family: 'Gilda Display', serif;
+	animation: copyright 3s ease;
+	max-height: 0px;
+}
+div.copyright p {
+	
 }

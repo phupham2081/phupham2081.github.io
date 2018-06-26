@@ -4,8 +4,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.clear {
+	clear: both;
+}
 div.container {
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 	position: relative;
 }
@@ -20,14 +23,23 @@ div#menu>p:nth-child(3){
 	color: #ff5252;
 	font-family: 'Courgette', cursive;
 }
+div.column-1 {
+	width: 20%;
+	float: left;
+	min-height: 300px;
+}
+div.column-2 {
+	width: 80%;
+	float: left;
+	min-height: 300px;
+}
 ul.nav {
-	width:  250px;
+	width: 20%;
 	background-color: #ff5252;
-	margin: auto;
 	list-style: none;
 	position: absolute;
-	left: 15px;
-	top: 113px;
+	left: 0px;
+	top: 112px;
 }
 ul.nav li {
 	padding: 5px 15px;
@@ -56,7 +68,7 @@ div#list-item {
 div#list-item .imgs {
 	width: 33%;
 	/* padding: 2.4%; */
-	display: inline-block;
+	float: left;
 }
 div#list-item .imgs:hover {
 	background-color: red;

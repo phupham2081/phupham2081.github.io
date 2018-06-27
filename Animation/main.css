@@ -171,6 +171,7 @@ div.gallary-img .imgs a {
 
 div.copyright {
 	width:  10%;
+
 	margin: auto;
 	text-align: center;
 	font-family: 'Gilda Display', serif;
@@ -180,5 +181,6 @@ div.copyright {
 	position: relative;
 }
 div.copyright p {
-	
+	width: 100%;
+	height: 20px;
 }

@@ -7,14 +7,30 @@
 }
 @keyframes copyright {
 	0% {
-		transform: translateX(40%);
-		transition: transform 1s ease-in-out;
+		/* transform: translateX(42%);
+		transition: transform 1s ease-in-out; */
+		right: -42%;
+		opacity: 0;
 	}
 	25% {
-		transform: translateX(40%);
+		right: -42%;
+		opacity: 1;
 	}
 	100% {
-		transform: translateX(0%);
+		right: 0%;
+	}
+}
+@-webkit-keyframes copyright {
+	0% {
+		right: -42%;
+		opacity: 0;
+	}
+	25% {
+		right: -42%;
+		opacity: 1;
+	}
+	100% {
+		right: 0%;
 	}
 }
 @keyframes details-product {
@@ -23,6 +39,25 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+@-webkit-keyframes details-product {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+@keyframes fade {
+	50% {
+		opacity: 0.1;
+	}
+}
+@-webkit-keyframes fade {
+	50% {
+		opacity: 0.1;
 	}
 }
 div.container {
@@ -36,6 +71,50 @@ h1 {
 	font-family: 'Gilda Display', serif;
 	text-transform: uppercase;
 	letter-spacing: 10px;
+}
+span.letter {
+	font-family: 'Gilda Display', serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 0px 0px 3px white ;
+}
+span.letter:nth-child(1) {
+	-webkit-animation: fade 4s infinite 200ms;
+	animation: fade 4s infinite 200ms;
+}
+span.letter:nth-child(2) {
+	-webkit-animation: fade 4s infinite 400ms;
+	animation: fade 4s infinite 400ms;
+}
+span.letter:nth-child(3) {
+	-webkit-animation: fade 4s infinite 600ms;
+	animation: fade 4s infinite 600ms;
+}
+span.letter:nth-child(4) {
+	-webkit-animation: fade 4s infinite 800ms;
+	animation: fade 4s infinite 800ms;
+}
+span.letter:nth-child(5) {
+	-webkit-animation: fade 4s infinite 1000ms;
+	animation: fade 4s infinite 1000ms;
+}
+span.letter:nth-child(6) {
+	-webkit-animation: fade 4s infinite 1200ms;
+	animation: fade 4s infinite 1200ms;
+}
+span.letter:nth-child(7) {
+	-webkit-animation: fade 4s infinite 1400ms;
+	animation: fade 4s infinite 1400ms;
+}
+span.letter:nth-child(8) {
+	-webkit-animation: fade 4s infinite 1600ms;
+	animation: fade 4s infinite 1600ms;
+}
+span.letter:nth-child(9) {
+	-webkit-animation: fade 4s infinite 1800ms;
+	animation: fade 4s infinite 1800ms;
 }
 div#heading > h3 {
 	font-family: 'Roboto', sans-serif;
@@ -78,6 +157,7 @@ div.gallary-img .imgs:hover a::after {
 	font-family: 'Gilda Display', serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	-webkit-animation: details-product 1s ease-in;
 	animation: details-product 1s ease-in;
 }
 div.gallary-img div.imgs img {
@@ -90,10 +170,14 @@ div.gallary-img .imgs a {
 
 
 div.copyright {
+	width:  10%;
+	margin: auto;
 	text-align: center;
 	font-family: 'Gilda Display', serif;
-	animation: copyright 3s ease;
+	-webkit-animation: copyright 4s ease;
+	animation: copyright 4s ease;
 	max-height: 0px;
+	position: relative;
 }
 div.copyright p {
 	

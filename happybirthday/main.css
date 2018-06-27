@@ -1,0 +1,31 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFEDB2;
+	width: 100%;
+	min-height: 1080px;
+	display: fixed;
+}
+div.wrap {
+	width: 100%;
+	height: 900px;
+	border-bottom: 5px solid black;
+	position: relative;
+}
+div.my-car {
+	width: 230px;
+	height: 100px;
+	position: absolute;
+	background-color: red;
+	bottom: 31px;
+
+}
+div.car {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}

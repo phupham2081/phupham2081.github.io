@@ -57,6 +57,7 @@ div.gallary-img .imgs {
 div.gallary-img .imgs:hover img{
 	filter: blur(2px);
 	transition: filter 1s linear;
+	-webkit-transition: filter 1s linear;
 
 }
 div.gallary-img .imgs:hover {

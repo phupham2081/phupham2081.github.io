@@ -2,6 +2,7 @@
 	border: 0;
 	margin:  0;
 	padding: 0;
+	box-sizing: border-box;
 }
 h1 {
 	text-align: center;
@@ -9,16 +10,22 @@ h1 {
 }
 div.container {
 	width: 70%;
-	margin: 0 auto;
+	margin: auto;
 }
 div.item {
 	width : 18%;
-	height: 550px;
 	display: inline-block;
-	
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+div.item:hover img{
+	filter: blur(2px);
+	transition: filter 1s linear;
+	-webkit-transition: filter 1s linear;
 }
 div.image a img{
-	width: 90%;
+	width: 100%;
+	
 }
 div.name {
 	text-align: center;
@@ -28,15 +35,28 @@ div.name a {
 	font-size: 18px;
 	list-style: none;
 	text-decoration: none;
+	color: #ff5252;
+	font-family: 'Courgette', cursive;
 }
 div.product img {
 	width: 25%;
 	height: 450px;
-	display: inline-block;
+	float: left;
+	margin-left: 25%;
+}
+div.product img:hover {
+	transform: translate(0, -5px);
+}
+div.name-product {
+	width: 25%;
+	height: 450px;
+	text-align: center;
+	float: left;
 }
 div.name-product a {
 	font-size: 24px;
-	text-align: center;
+	color: #ff5252;
+	font-family: 'Courgette', cursive;
 	display: inline-block;
 	text-decoration: none;
 }

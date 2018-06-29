@@ -170,12 +170,12 @@ div.gallary-img .imgs a {
 
 
 div.copyright {
-	width:  10%;
+	width:  15%;
 	margin: auto;
 	text-align: center;
 	font-family: 'Gilda Display', serif;
-	-webkit-animation: copyright 4s ease;
-	animation: copyright 4s ease;
+	-webkit-animation: copyright 4s ease infinite;
+	animation: copyright 4s ease infinite;
 	max-height: 0px;
 	position: relative;
 }

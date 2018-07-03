@@ -14,6 +14,9 @@ div.wrap {
 body {
 	background-color: white;
 }
+.container {
+	
+}
 /* <===========================> CSS chung <===========================>*/
 #header div.information-top {
 	width: 100%;
@@ -36,7 +39,8 @@ body {
 #header div.information-top div.information-site a {
 	float: right;
 	padding-right: 0%;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Abril Fatface', cursive; */
 	color: black;
 	padding-right: 5%;
 }
@@ -69,7 +73,6 @@ body {
 }
 #header .navigation{
 	height: 70px;
-    background-color: #373737;
 }
 #header div.navigation nav ul li{
 	display: inline-block;
@@ -80,6 +83,7 @@ body {
 }
 #header div.navigation nav > ul > li{
 	position: relative;
+	z-index: 10;
 }
 #header div.navigation nav > ul > li::after{
 	position: absolute;
@@ -108,11 +112,18 @@ body {
 	display: none;
 	background-color: white;
 	top: 70px;
+	z-index: 11;
 }
 #header div.navigation nav ul li:hover ul.sub-menu-1 {
 	display: block;
 	background-color: white;
-
+	
+}
+#header div.navigation nav ul li:hover ul.sub-menu-1 ul {
+	display: none;
+}
+#header div.navigation nav ul li:hover ul.sub-menu-1 li:hover ul {
+	display: block;
 }
 #header div.navigation nav ul li ul.sub-menu-1 li {
 	width: 90%;
@@ -130,27 +141,175 @@ body {
 #header div.navigation nav ul li ul.sub-menu-1 li a {
 	color: #999999;
 }
-#header div.navigation nav ul li ul.sub-menu-1 li ul.sub-menu-2 {
-	position: absolute;
-	width: 185px;
-	display: none;
-	left: 100%;
-	top: 0%;
-}
-#header div.navigation nav ul li ul.sub-menu-1 li:hover ul.sub-menu-2 {
-	display: block;
-	background-color: white;
-}
-#header div.navigation nav ul li ul.sub-menu-1 li:hover ul.sub-menu-2 li{
+#header div.navigation nav ul li ul.sub-menu-1 li:hover ul li {
 	color: #999999;
-	padding: 10px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 }
-#header div.navigation nav ul.sub-menu-1 li ul.sub-menu-2 li:hover a{
+#header div.navigation nav ul li ul.sub-menu-1 li:hover ul li:hover {
 	color: white;
 }
+#header div.navigation nav ul li ul.sub-menu-1 li:hover ul {
+	left: 100%;
+	top: 0%;
+}
+
 /* <===========================> Header <===========================>*/
+div.slider {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: 300px;
+}
+div.slider a.pre, a.next {
+	padding: 13px 20px ;
+	background-color: red;
+	border-radius: 50%;
+	vertical-align: middle;
+	position: absolute;
+	color: white ;
+	cursor: pointer;
+	border-radius: 0 3px 3px 0;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.6s ease;
+	z-index: 12;
+	top: 80%;
+	background-color: rgba(0,0,0,0.5);
+}
+div.slider a.pre {
+	left: 0;
+}
+div.slider a.next {
+	right: 0;
+}
+div.slider a.next: hover, a.pre:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+div.slider div.mySlides {
+	display: none;
+}
+div.slider img {
+	width: 100%;
+	position: absolute;
+	top: -70px;
+	z-index: 9;
+	height: 700px;
+}
+div.slider div.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+div.slider div.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 /* <===========================> Slide <===========================>*/
+section.list-menu {
+	margin-top: 400px;
+}
+div#menu {
+	text-align: center;
+}
+div#menu>p:first-child {
+	font-size: 30px;
+	font-family: 'Chonburi', cursive;
+	text-transform: uppercase;
+}
+div#menu>p:nth-child(3){
+	color: #ff5252;
+	font-family: 'Courgette', cursive;
+}
+div#menu ul.nav-menu  {
+	margin: auto;
+	width: 30%;
+	list-style: none;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+
+}
+div#menu ul.nav-menu > li {
+	display: inline-block;
+}
+div#menu ul.nav-menu > li > a {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-family: 'Abril Fatface', cursive ;
+	color: black;
+}
+div#menu ul.nav-menu > li > a:hover {
+	color: #ff5252;
+}
+div#list-item {
+	padding-top: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+div#list-item .imgs {
+	width: 21%;
+	padding-bottom: 20px;
+	margin: 2%;
+	float: left;
+	-webkit-box-shadow: 0 3px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0 3px 10px 0px rgba(0,0,0,0.1);
+}
+
+div#list-item .imgs img {
+	max-width: 100%;
+}
+div#list-item p.price {
+	font-family: 'Abril Fatface', cursive ;
+	font-size: 18px;
+	text-align: center;
+	color: #ff5252;
+}
+div#list-item .title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+div#list-item div.imgs div.title-product {
+	text-align: center;
+}
+div#list-item div.imgs div.title-product a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+div#list-item div.imgs > div.add-cart > a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding: 5px 10px;
+	background-color: #777;
+	color: white ;
+}
+div#list-item div.imgs > div.add-cart > a:hover {
+	background-color: #ff5252;
+}
+div#list-item div.imgs > div.add-cart {
+	margin: 10px 0 0 35px;
+}
+/* <===========================> List menu <===========================>*/

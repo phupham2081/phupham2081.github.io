@@ -5,10 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="main.css">
+
 	<!----------------------Css ---------------------->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chonburi&amp;subset=vietnamese" rel="stylesheet">
+
 	<!----------------------Google font ---------------------->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -39,7 +42,7 @@
 							<li><a href="" title="">Danh sách thực đơn</a>
 								<ul class="sub-menu-1">
 									<li><a href="" title="">Thực đơn 1</a>
-										<ul class="sub-menu-2">
+										<ul class="sub-menu-1">
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
@@ -48,7 +51,7 @@
 										</ul>
 									</li>
 									<li><a href="" title="">Thực đơn 2</a>
-										<ul class="sub-menu-2">
+										<ul class="sub-menu-1">
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
@@ -57,7 +60,7 @@
 										</ul>
 									</li>
 									<li><a href="" title="">Thực đơn 3</a>
-										<ul class="sub-menu-2">
+										<ul class="sub-menu-1">
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
@@ -66,7 +69,7 @@
 										</ul>
 									</li>
 									<li><a href="" title="">Thực đơn 4</a>
-										<ul class="sub-menu-2">
+										<ul class="sub-menu-1">
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
@@ -75,7 +78,7 @@
 										</ul>
 									</li>
 									<li><a href="" title="">Thực đơn 5</a>
-										<ul class="sub-menu-2">
+										<ul class="sub-menu-1">
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
 											<li><a href="" title=""></a>Món ăn 1</li>
@@ -93,9 +96,81 @@
 					</nav>
 				</div>
 			</div>
+			<div class="slider">
+				<div class="mySlides fade">
+					<img src="imgs/1.jpg" alt="">
+				</div>
+				<div class="mySlides fade">
+					<img src="imgs/2.jpg" alt="">
+				</div>
+				<a title="" class="pre" onclick="plusSlides(-1)">&#10094;</a>
+				<a title="" class="next" onclick="plusSlides(1)">&#10095;</a>
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
 		</header><!-- /header -->
 		<section class="list-menu">
-			
+			<div class="wrap">
+				<div id="menu">
+					<p>Top sản phẩm bán chạy</p>
+					<br>
+					<p>Today Is a Special Day</p>
+					<br>
+					<ul class="nav-menu">
+						<li><a href="">Salad</a></li>
+						<li><a href="">Potato</a></li>
+						<li><a href="">Pizza</a></li>
+						<li><a href="">Drinks</a></li>
+					</ul>
+				</div>
+				<div id="list-item">
+
+					<div class="imgs">
+						<a href="" title=""><img src="imgs/m-img-menu-01.jpg" alt="ảnh món ăn" title="ảnh món ăn"></a>
+						<div class="title-product">
+							<a href="" title="" class="title">Sản phẩm mới</a>
+						</div>
+						<p class="price">$18</p>
+						<div class="add-cart">
+							<a href="" title=""><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+					<div class="imgs">
+						<img src="imgs/m-img-menu-02.jpg" alt="ảnh món ăn" title="ảnh món ăn">
+						<div class="title-product">
+							<a href="" title="" class="title">Sản phẩm mới</a>
+						</div>
+						<p class="price">$18</p>
+						<div class="add-cart">
+							<a href="" title=""><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+					<div class="imgs">
+						<img src="imgs/m-img-menu-03.jpg" alt="ảnh món ăn" title="ảnh món ăn">
+						<div class="title-product">
+							<a href="" title="" class="title">Sản phẩm mới</a>
+						</div>
+						<p class="price">$18</p>
+						<div class="add-cart">
+							<a href="" title=""><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+					<div class="imgs">
+						<img src="imgs/m-img-menu-04.jpg" alt="ảnh món ăn" title="ảnh món ăn">
+						<div class="title-product">
+							<a href="" title="" class="title">Sản phẩm mới</a>
+						</div>
+						<p class="price">$18</p>
+						<div class="add-cart">
+							<a href="" title=""><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="">
 			
@@ -104,5 +179,6 @@
 			
 		</footer>
 	</div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

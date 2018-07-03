@@ -305,11 +305,12 @@ div#list-item div.imgs > div.add-cart > a{
 	padding: 5px 10px;
 	background-color: #777;
 	color: white ;
+	border-radius: 3px;
 }
 div#list-item div.imgs > div.add-cart > a:hover {
 	background-color: #ff5252;
 }
 div#list-item div.imgs > div.add-cart {
-	margin: 10px 0 0 35px;
+	margin: 10px 0 0 37px;
 }
 /* <===========================> List menu <===========================>*/

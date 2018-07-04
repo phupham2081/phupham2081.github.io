@@ -311,8 +311,9 @@ div#list-item div.imgs > div.add-cart > a{
 div#list-item div.imgs > div.add-cart > a:hover {
 	background-color: #ff5252;
 }
-div#list-item div.imgs > div.add-cart a{
+div#list-item div.imgs > div.add-cart {
 	position: absolute;
 	left: 12%;
+	bottom: 6%;
 }
 /* <===========================> List menu <===========================>*/

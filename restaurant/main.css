@@ -268,11 +268,12 @@ div#list-item {
 }
 div#list-item .imgs {
 	width: 21%;
-	padding-bottom: 20px;
+	padding-bottom: 55px;
 	margin: 2%;
 	float: left;
-	-webkit-box-shadow: 0 3px 10px 0px rgba(0,0,0,0.1);
-	box-shadow: 0 3px 10px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px 0px rgba(0,0,0,0.4);
+	box-shadow: 0 3px 10px 0px rgba(0,0,0,0.4);
+	position: relative;
 }
 
 div#list-item .imgs img {
@@ -310,7 +311,8 @@ div#list-item div.imgs > div.add-cart > a{
 div#list-item div.imgs > div.add-cart > a:hover {
 	background-color: #ff5252;
 }
-div#list-item div.imgs > div.add-cart {
-	margin: 10px 0 0 37px;
+div#list-item div.imgs > div.add-cart a{
+	position: absolute;
+	left: 12%;
 }
 /* <===========================> List menu <===========================>*/

@@ -5,6 +5,7 @@
 }
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 div.wrap {
 	width: 80%;
@@ -16,6 +17,9 @@ body {
 }
 .container {
 	
+}
+.clear {
+	clear: both;
 }
 /* <===========================> CSS chung <===========================>*/
 #header div.information-top {
@@ -112,7 +116,7 @@ body {
 	display: none;
 	background-color: white;
 	top: 70px;
-	z-index: 11;
+	z-index: 14;
 }
 #header div.navigation nav ul li:hover ul.sub-menu-1 {
 	display: block;
@@ -124,6 +128,7 @@ body {
 }
 #header div.navigation nav ul li:hover ul.sub-menu-1 li:hover ul {
 	display: block;
+	z-index: 14;
 }
 #header div.navigation nav ul li ul.sub-menu-1 li {
 	width: 90%;
@@ -162,6 +167,45 @@ div.slider {
 	margin: auto;
 	height: 300px;
 }
+
+div.slider p.flash-sell,p.order-fast {
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 13;
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+}
+div.slider p.order-fast {
+	left: 42%;
+	top: 40%;
+	animation: left-to-right 2s infinite;
+}
+div.slider p.flash-sell {
+	left: 37%;
+	top: 63%;
+	animation: right-to-left 2s infinite;
+}
+div.slider a.more {
+	position: absolute;
+	left: 46%;
+	top: 90%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	z-index: 13;
+	font-family: 'Montserrat', sans-serif;
+	color: #e52233;
+	opacity: 0.8;
+	border: 2px solid #e52233;
+	animation: bot-to-top 2s infinite;
+}
+div.slider a.more:hover {
+	color: white;
+	background-color: #e52233;
+	border: 2px solid #e52233;
+	
+}
+
 div.slider a.pre, a.next {
 	padding: 13px 20px ;
 	background-color: red;
@@ -223,10 +267,41 @@ div.slider div.fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+@-webkit-keyframes left-to-right {
+  from {left: 0%;
+  	opacity: 0;} 
+  to {left: 42%;
+  	opacity: 1;}
+}
+@keyframes left-to-right {
+  from {left: 0%;
+  	opacity: 0;} 
+  to {left: 42%;
+  	opacity: 1;}
+}
+@-webkit-keyframes right-to-left {
+  from {right: 0%;
+  	opacity: 0;} 
+  to {right: 37%;
+  	opacity: 1;}
+}
+@keyframes right-to-left {
+  from {right: 0%;
+  	opacity: 0;} 
+  to {right: 37%;
+  	opacity: 1;}
+  }
+  @keyframes bot-to-top {
+  from {top: 150%;
+  	opacity: 0;} 
+  to {top: 90%;
+  	opacity: 1;}
+  }
 /* <===========================> Slide <===========================>*/
-section.list-menu {
-	margin-top: 400px;
+
+section#list-menu {
+	padding-top: 400px;
+	padding-bottom: 55%;
 }
 div#menu {
 	text-align: center;
@@ -268,7 +343,6 @@ div#list-item {
 }
 div#list-item .imgs {
 	width: 21%;
-	padding-bottom: 55px;
 	margin: 2%;
 	float: left;
 	-webkit-box-shadow: 0 3px 10px 0px rgba(0,0,0,0.4);
@@ -300,20 +374,225 @@ div#list-item div.imgs div.title-product a {
 	color: black;
 }
 div#list-item div.imgs > div.add-cart > a{
+	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	text-align: center;
-	padding: 5px 10px;
-	background-color: #777;
+	padding: 6px 40px;
+	/* background-color: #777; */
 	color: white ;
-	border-radius: 3px;
 }
-div#list-item div.imgs > div.add-cart > a:hover {
+div#list-item div.imgs > div.add-cart:hover {
 	background-color: #ff5252;
 }
 div#list-item div.imgs > div.add-cart {
-	position: absolute;
-	left: 12%;
-	bottom: 6%;
+	width: 100%;
+	height: 30px;
+	background-color: #777;
+	padding: 10px 0 0 0;
+	margin-top: 5px;
 }
 /* <===========================> List menu <===========================>*/
+#comment-customer {
+	width: 100%;
+	min-height: 600px;
+	background-image: url("imgs/bg-2.png");
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#comment-customer p.customer-title {
+	color: white;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	padding-top: 5%;
+}
+#comment-customer div.block-comment {
+	width: 33.33%;
+	float: left;
+	color: white;
+}
+#comment-customer div.block-comment img {
+	width: 40%; 
+	border-radius: 50%;
+}
+#comment-customer div.block-comment p:nth-child(2) {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Chonburi', cursive;
+}
+#comment-customer div.block-comment p:first-child {
+	font-family: 'Montserrat', sans-serif;
+	padding: 30px 50px 30px 30px;
+	font-size: 15px;
+	margin-top: 15%;
+}
+/* <===========================> Customer <===========================>*/
+#news {
+	margin-top: 80px;
+	min-height: 570px;
+}
+#news > p:first-child {
+	font-size: 30px;
+	font-family: 'Chonburi', cursive;
+	text-transform: uppercase;
+	text-align: center;
+}
+#news > p:nth-child(2){
+	color: #ff5252;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+#news div.news-item {
+	width: 33.33%;
+	float: left;
+	padding: 1%;
+	box-sizing: border-box;
+	
+}
+#news div.news-item img {
+	width: 100%;
+	height: 220px;
+}
+#news div.news-item p.news-title {
+	font-size: 24px;
+	font-family: 'Chonburi', cursive;
+	padding: 10px 0;
+	line-height: 2;
+}
+#news div.news-item p.news-datetime {
+	padding: 5px 0 13px 0;
+	height: 10px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+#news div.news-item div.ke-ngang {
+	width: 100%;
+	height: 1px;
+	background-color: lightgray;
+}
+#news div.news-item p.news-des {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+    padding: 15px 0 10px;
+}
+#news div.news-item a {
+	color: black;
+}
+#news div.news-item a.read-more {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+#news div.news-item a:hover {
+    color: #ff5252;
+}
+/* <===========================> News <===========================>*/
+footer {
+	background-color: #272727;
+	min-height: 400px;
+	color: white;
+	font-family: Montserrat-Regular;
+}
+footer a {
+	color: white;
+}
+footer .ft-block {
+	width: 25%;
+	box-sizing: border-box;
+	float: left;
+	padding-top: 5%;
+}
+footer .ft-block p.ft-title,a.ft-logo {
+	font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding-bottom: 5%;
+    line-height: 1;
+}
+footer .ft-email p.ft-email-des{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0 12% 5% 0%;
+} 
+footer .ft-email form input {
+	padding: 5px 10px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 3px 0 0 3px;
+}
+footer .ft-email form button {
+	padding: 5px 10px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #ff5252;
+    border-radius: 0 3px 3px 0;
+    margin-left: -4px;
+}
+footer .ft-infor .ft-infor-block a {
+ 	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+footer .ft-infor .ft-infor-block {
+
+}
+footer .ft-infor .ft-infor-block a span {
+	font-family: 'Lobster', cursive;
+	font-size: 18px;
+}
+footer .ft-infor p.ft-title-social {
+    font-family: 'Chonburi', cursive;
+    font-size: 18px;
+    padding: 5% 0;
+}
+footer .ft-infor .flex-container {
+  display: flex;
+}
+footer .ft-infor .flex-container a {
+	display: flex;
+	width:  35px;
+	height: 35px;
+	border: 1px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+footer .ft-infor .flex-container a:hover {
+	background-color: #ff5252;
+	border: 1px solid #ff5252;
+}
+footer .ft-contact p {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+footer .ft-des p {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 5%;
+}
+div.copyright {
+	width: 100%;
+	height: 70px;
+	background-color: #1c1d1e;
+}
+div.copyright p{
+	color: white;
+	text-align: center;
+	font-family: 'Chonburi', cursive;
+    font-size: 16px;
+	padding-top: 30px;
+}
+
+/* <===========================> Footer <===========================>*/

@@ -210,7 +210,11 @@ p.third-title {
 	position: relative;
 	
 }
+#about div.block-imgs div.imgs div.img-main img {
+	width: 100%;
+}
 #about div.block-imgs div.imgs div.img-hover img{
+	width: 100%;
 	position: absolute;
 	top: 0%;
 	left: 0%;

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["23nTy"]); }
+
+__d("Placeholder.react",["react"],(function(a,b,c,d,e,f){e.exports=b("react").Placeholder}),null);

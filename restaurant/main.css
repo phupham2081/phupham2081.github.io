@@ -21,6 +21,11 @@ body {
 .clear {
 	clear: both;
 }
+div.breadcrumb-small {
+	font-family: 'Chonburi', cursive;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
 /* <===========================> CSS chung <===========================>*/
 #header div.information-top {
 	width: 100%;
@@ -68,7 +73,7 @@ body {
 	padding-top: 3px;
 	color: #ff5252;
     font-family: 'Lobster', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
 }
 #header div.navigation {
 	position: relative;
@@ -177,9 +182,11 @@ body {
 	top: 20%;
 }
 #header form {
+	width: 75%;
 	display: inline-block;
 }
 #header form input {
+	width: 65%;
 	padding: 5px 10px;
 	font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -417,7 +424,7 @@ div#list-item div.imgs div.title-product a {
 div#list-item div.imgs > div.add-cart > a{
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -565,6 +572,7 @@ footer .ft-email p.ft-email-des{
     padding: 0 12% 5% 0%;
 } 
 footer .ft-email form input {
+	width: 50%;
 	padding: 5px 10px;
 	font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -641,14 +649,18 @@ div.copyright p{
 
 /* <===========================> Footer <===========================>*/
 #ct-product div.ct-product-left, div.ct-product-right {
+	margin: 50px 0;
 	float: left;
 	box-sizing: border-box;
 }
 #ct-product div.ct-product-left {
-	width: 15%;
+	width: 25%;
 }
 #ct-product div.ct-product-right {
-	width: 85%;
+	width: 75%;
+}
+#ct-product div.ct-product-left .ct-range {
+	padding-bottom: 20px;
 }
 #ct-product div.ct-product-left p.cp-title {
 	font-family: 'Lobster', cursive;
@@ -672,20 +684,47 @@ div.copyright p{
 #ct-product div.ct-product-left ul li label {
 
 }
-#ct-product div.ct-product-left ul.cp-color li label input[type="checkbox"] {
+#ct-product div.ct-product-left ul li label input[type="checkbox"] {
 	width: 16px;
 	height: 16px;
-	/* position: relative; */
-	/* visibility: hidden; */
-	/* background-color: red; */
-	/* background: lighten(#0096FF, 20%); */
+	padding: 0 8px 0 0;
+	vertical-align: middle;
+	margin: 4px;
 }
-#ct-product div.ct-product-left ul li label input[type="checkbox"]::after {
-	/* position: absolute; */
+#ct-product div.ct-product-right p:first-child{
+	font-family: 'Chonburi', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+#ct-product div.ct-product-right span,select {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+#ct-product div.ct-product-right select {
+	border: 1px solid #dedede;
+	/* background-color: #ff5252; */
+}
+
+/* #ct-product div.ct-product-left ul.cp-color li label input[type="checkbox"] {
+	
+	background: none;
+    border: 1px solid #dedede;
+    display: inline-block;
+    background-color: var(--main-bg-color);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                overflow: hidden;
+    vertical-align: middle;
+    opacity: 0;
+} */
+/* #ct-product div.ct-product-left ul li label input[type="checkbox"]::after {
+	position: absolute;
 	content: "";
 	width: 16px;
 	height: 16px;
 	background-color: red;
-	opacity: 1;
+	background-color: var(--main-bg-color);
+	opacity: 0;
+	border: 1px solid lightgray;
+} */
+:root {
+    --main-bg-color: white; 
 }
 /* <===========================> Category Product <===========================>*/

@@ -94,11 +94,13 @@
 							<li><a href="" title="">Khuyến mãi</a></li>
 						</ul>
 					</nav>
-					<form action="" method="get" accept-charset="utf-8">
-						<input type="text" name="" placeholder="Search">
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</form>
-					<a href="" title=""><i class="fas fa-shopping-cart"></i></a>
+					<div class="search-cart">
+						<form action="" method="get" accept-charset="utf-8">
+							<input type="text" name="" placeholder="Search">
+							<button type="submit"><i class="fas fa-search"></i></button>
+						</form>
+						<a href="" title=""><i class="fas fa-shopping-cart"></i></a>
+					</div>
 				</div>
 			</div>
 			<div class="slider">
@@ -126,7 +128,12 @@
 		<section id="ct-product">
 			<div class="wrap">
 				<div class="ct-product-left">
-					<div class="ct-product-price">
+					<div class="breadcrumb-small">
+						<a href="/" title="Quay trở về trang chủ" style="color: #ff5252;">Trang chủ</a>
+						<span aria-hidden="true">/</span>
+						<span>Thực phẩm khô</span>
+					</div> 
+					<div class="ct-product-price ct-range">
 						<p class="cp-title">Khoảng giá</p>
 						<div class="cp-line"></div>
 						<ul class="cp-price-range">
@@ -174,7 +181,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="ct-product-origin">
+					<div class="ct-product-origin ct-range">
 						<p class="cp-title">Xuất xứ</p>
 						<div class="cp-line"></div>
 						<ul class="cp-origin">
@@ -204,13 +211,13 @@
 							</li>
 						</ul>
 					</div>
-					<div class="ct-product-color">
+					<div class="ct-product-color ct-range">
 						<p class="cp-title">Màu sắc</p>
 						<div class="cp-line"></div>
 						<ul class="cp-color">
 							<li>
 								<label>
-									<input type="checkbox" name="" value="" style="background-color: red;">
+									<input type="checkbox" name="" value="" style="background-color: var(--main-bg-color);">
 									<span>Xanh</span>
 								</label>
 							</li>
@@ -272,7 +279,21 @@
 					</div>
 				</div>
 				<div class="ct-product-right">
-					
+					<p>Thực phẩm khô</p>
+					<span>Sắp xếp :</span>
+					<select>
+						<option value="">Sắp xếp từ A đến Z</option>
+						<option value="">Sắp xếp từ A đến Z</option>
+						<option value="">Sắp xếp từ A đến Z</option>
+						<option value="">Sắp xếp từ A đến Z</option>
+						<option value="">Sắp xếp từ A đến Z</option>
+					</select>
+					<div class="ct-product-list">
+						<div class="ct-product-item">
+							<img src="imgs/m-img-menu-01.jpg" alt="">
+							
+						</div>
+					</div>
 				</div>	
 				<div class="clear"></div>							
 			</div>

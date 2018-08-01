@@ -1008,3 +1008,14 @@ div.dp-block-3 .dp-tag a:hover {
 	border: 1px solid #ff5252;
 }
 /* <===========================> Contact <===========================>*/
+#discount {
+	margin-bottom: 100px;
+}
+#discount h3{
+	font-family: 'Lobster', cursive;
+    font-size: 30px;
+	border-bottom: 1px solid #ededed;
+	margin: 50px 0
+}
+
+/* <===========================> Discount <===========================>*/

@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	border:  0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 a{
 	text-decoration: none;
@@ -185,11 +185,12 @@ img {
 	display: inline-block;
 	z-index: 14;
 	position: absolute;
-	top: 20%;
+	top: 30%;
 }
 #header form {
 	width: 75%;
 	display: inline-block;
+	margin-right: -10px;
 }
 #header form input {
 	width: 65%;
@@ -231,14 +232,14 @@ div.slider p.flash-sell,p.order-fast {
 	font-size: 40px;
 }
 div.slider p.order-fast {
-	left: 35%;
+	left: 42%;
 	top: 40%;
-	animation: left-to-right 2s infinite;
+	animation: left-to-right 2s ;
 }
 div.slider p.flash-sell {
-	left: 27%;
+	left: 37%;
 	top: 63%;
-	animation: right-to-left 2s infinite;
+	animation: right-to-left 2s ;
 }
 div.slider a.more {
 	position: absolute;
@@ -251,7 +252,7 @@ div.slider a.more {
 	color: #e52233;
 	opacity: 0.8;
 	border: 2px solid #e52233;
-	animation: bot-to-top 2s infinite;
+	animation: bot-to-top 2s;
 }
 div.slider a.more:hover {
 	color: white;
@@ -336,13 +337,13 @@ div.slider div.fade {
 @-webkit-keyframes right-to-left {
   from {right: 0%;
   	opacity: 0;} 
-  to {right: 28%;
+  to {right: 38%;
   	opacity: 1;}
 }
 @keyframes right-to-left {
   from {right: 0%;
   	opacity: 0;} 
-  to {right: 28%;
+  to {right: 38%;
   	opacity: 1;}
   }
   @keyframes bot-to-top {
@@ -356,6 +357,7 @@ div.slider div.fade {
 section#list-menu {
 	padding-top: 100px;
 	padding-bottom: 48%;
+	margin-bottom: 10px;
 }
 div#menu {
 	text-align: center;
@@ -426,7 +428,7 @@ div.title-product {
 }
 div.ct-product-info {
 		/* margin-top: 20px; */
-	height: 100px;
+	height: 110px;
 	padding-top: 2%;
 	transform: translateY(40px);
 	-webkit-transition: all 0.3s ease; */
@@ -510,7 +512,7 @@ div.list-item div.imgs > div.add-cart {
 	padding: 10px 0 0 0;
 	margin-top: 5px;
 }
-/* <===========================> List menu <===========================>*/
+/* <===========================> List menu index<===========================>*/
 #comment-customer {
 	width: 100%;
 	min-height: 600px;
@@ -547,7 +549,7 @@ div.list-item div.imgs > div.add-cart {
 	font-size: 15px;
 	margin-top: 15%;
 }
-/* <===========================> Customer <===========================>*/
+/* <===========================> Customer index<===========================>*/
 #news {
 	margin-top: 80px;
 	min-height: 570px;
@@ -612,7 +614,7 @@ div.list-item div.imgs > div.add-cart {
 #news div.news-item a:hover {
     color: #ff5252;
 }
-/* <===========================> News <===========================>*/
+/* <===========================> News index <===========================>*/
 footer {
 	background-color: #272727;
 	min-height: 400px;
@@ -1011,11 +1013,154 @@ div.dp-block-3 .dp-tag a:hover {
 #discount {
 	margin-bottom: 100px;
 }
+
 #discount h3{
 	font-family: 'Lobster', cursive;
     font-size: 30px;
 	border-bottom: 1px solid #ededed;
-	margin: 50px 0
+	margin: 50px 0;
 }
 
 /* <===========================> Discount <===========================>*/
+#cate-news {
+	margin-bottom: 100px;
+
+}
+
+#cate-news h3{
+	font-family: 'Chonburi', cursive;
+    font-size: 30px;
+	border-bottom: 1px solid #ccc;
+	margin: 50px 0
+}
+
+.cate-news-left{
+	width: 75%;
+}
+
+.cate-news-right {
+	width: 25%;
+	padding-left: 5%;
+	box-sizing: border-box;
+}
+
+.cate-news-left , .cate-news-right {
+	float: left;
+}
+
+.cate-news-left img {
+	width: 100%;
+}
+
+.cate-news-item {
+	padding-bottom: 50px;
+}
+
+.cate-news-img {
+	position: relative;
+}
+
+.cate-news-infor {
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+	color: #ccc;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cate-news-infor span {
+	margin: 5px;
+}
+
+.cate-news-left a.news-title {
+    font-size: 24px;
+    font-family: 'Chonburi', cursive;
+    padding: 10px 0;
+    line-height: 2;
+    color: black;
+}
+
+.cate-news-left p.news-des {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+    padding: 0px 0 10px;
+    line-height: 1.5;
+}
+
+.cate-news-left a.read-more {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.cate-news-left a.read-more:hover, .cate-news-left a.news-title:hover {
+	color: #ff5252;
+}
+
+.cate-news-right .cate-news-list ul li {
+	width: 76%;
+	list-style: none;
+	border: 1px solid lightgray;
+	padding: 5px 10px;
+	color: black;
+	margin: 5px;
+	box-sizing: border-box;
+}
+
+.cate-news-right .cate-news-list ul li span{
+	float: right;
+}
+
+.cate-news-right .cate-news-list ul li span,.cate-news-right .cate-news-list ul li a {
+	color: black;
+}
+.cate-news-list ul li:hover span,.cate-news-list ul li:hover a {
+	color: #ff5252;
+}
+
+.cate-news-right .cate-news-tag a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    border: 1px dashed black;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.cate-news-right .cate-news-tag a:hover {
+	color: #ff5252;
+	border: 1px dashed #ff5252;
+}
+
+.cate-news-right .cate-news-title {
+	font-family: 'Lobster', cursive;
+    font-size: 30px;
+	border-bottom: 1px solid #ccc;
+	margin:10px 0 20px;
+	color: #ff5252;
+}
+
+.cate-news-right .cate-news-search form {
+	width: 76%;
+	border: 1px solid lightgray;
+	padding: 5px;
+}
+
+.cate-news-right .cate-news-search form input {
+	width: 75%;
+	padding: 5px;
+	border-right: 1px solid lightgray;
+}
+
+.cate-news-right .cate-news-search form button {
+	width: 10%;
+    background-color: white;
+}
+
+/* <===========================> Cate-news <===========================>*/
